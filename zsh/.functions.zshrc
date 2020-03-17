@@ -19,8 +19,12 @@ function ls() {
   endl; command exa -lh --group-directories-first --time-style=iso "$@"; endl 
 }
 
+#function dir() {
+#  ls -alhGF --color=always | less -R -X -F
+#}
+
 function dir() {
-  ls -alhGF --color=always | less -R -X -F
+  command gdir -w $COLUMNS -ACgs --color --hyperlink
 }
 
 function disk_space() {
@@ -36,3 +40,28 @@ function cform() {
   clang-format -style=Google -i "$@"
 }
 
+function lz() {
+  pillz "$@" && command clear
+}
+
+function repeating() {
+  local count=$(( $2 + 0 ))
+  if (( $count < 1 )) || (( $count > 100 )); then 
+    $count=1
+  fi
+  command awk -v count="$count" -v txt="$1" 'BEGIN {
+    while (z++ < count) printf txt
+  }'
+  
+  return 0
+}
+
+function mnap() {
+  repeating '—' COLUMNS; endl
+  command date
+  repeating '—' COLUMNS; endl
+  
+  command sudo nmap -Pn -p 1-65535 -sV -sS -T4 "$@" 
+  
+  repeating '—' COLUMNS; endl
+}

@@ -1,0 +1,7 @@
+set nowrap
+set tabsize 2
+set tabstospaces
+set autoindent
+set matchbrackets "(<[{)>]}"
+
+

@@ -43,6 +43,5 @@ alias cdc='cd ~/Desktop/cours'     # Cours
 alias show_profile='vim ~/.profile'
 #for those dumbass vscode extensions made for windows…
 alias cls='clear'
-alias g++='g++-8'
 # java shit
 alias javafxc='javac --module-path $PATH_TO_FX'
