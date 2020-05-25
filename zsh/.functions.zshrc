@@ -8,43 +8,52 @@
 #                                                                             #
 ###############################################################################
 
-alias path='echo -e ${PATH//:/\\n}'
 
-function endl() {
+endl() {
   printf "\n"
 }
 
 export COLUMNS
-function ls() {
+ls() {
   endl; command exa -lh --group-directories-first --time-style=iso "$@"; endl 
 }
 
-#function dir() {
-#  ls -alhGF --color=always | less -R -X -F
-#}
-
-function dir() {
-  command gdir -w $COLUMNS -ACgs --color --hyperlink
-}
-
-function disk_space() {
-  command df -am | less -R -X -F
-}
-
-function cd() {
+cd() {
   builtin cd "$@"; ls
 }
 
 # clang format
-function cform() {
+cform() {
   clang-format -style=Google -i "$@"
 }
 
-function lz() {
+dir() {
+  command gdir -w $COLUMNS -ACgs --color --hyperlink
+}
+
+#dir() {
+#  ls -alhGF --color=always | less -R -X -F
+#}
+
+disk_space() {
+  command df -am | less -R -X -F
+}
+
+lz() {
   pillz "$@" && command clear
 }
 
-function repeating() {
+mnap() {
+  repeating '—' COLUMNS; endl
+  command date
+  repeating '—' COLUMNS; endl
+  
+  command sudo nmap -Pn -p 1-65535 -sV -sS -T4 "$@" 
+  
+  repeating '—' COLUMNS; endl
+}
+
+repeating() {
   local count=$(( $2 + 0 ))
   if (( $count < 1 )) || (( $count > 100 )); then 
     $count=1
@@ -56,12 +65,8 @@ function repeating() {
   return 0
 }
 
-function mnap() {
-  repeating '—' COLUMNS; endl
-  command date
-  repeating '—' COLUMNS; endl
-  
-  command sudo nmap -Pn -p 1-65535 -sV -sS -T4 "$@" 
-  
-  repeating '—' COLUMNS; endl
+# This command is so supidly awkward that, yes, I need a function for it.
+# I know an alias would have worked. I don't care. Fuck you, Oracle.
+mysql_start() {
+  command mysql.server start
 }

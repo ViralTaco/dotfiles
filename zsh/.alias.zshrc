@@ -40,8 +40,11 @@ alias cdp='cd ~/Desktop/projects'  # Projects
 alias cdc='cd ~/Desktop/cours'     # Cours
 ####################################
 
+alias path='echo -e ${PATH//:/\\n}'
 alias show_profile='vim ~/.profile'
 #for those dumbass vscode extensions made for windows…
 alias cls='clear'
 # java shit
 alias javafxc='javac --module-path $PATH_TO_FX'
+
+alias cowtune='fortune | cowsay'
