@@ -15,11 +15,13 @@ endl() {
 
 export COLUMNS
 ls() {
-  endl; command exa -lh --group-directories-first --time-style=iso "$@"; endl 
+  command exa -lh --group-directories-first --time-style=iso "$@"; endl 
 }
 
 cd() {
-  builtin cd "$@"; ls
+  builtin cd "$@"
+  ls
+  return $?
 }
 
 # clang format

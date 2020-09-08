@@ -11,6 +11,8 @@
 alias clear='clear -x'
 # ls -a
 alias lsa="ls -a"
+# I like vim but...
+alias vim='nvim'
 
 # 
 # Shorthands for open 
@@ -32,13 +34,17 @@ alias mkphp='~/Desktop/projects/code/Exercism/phpunit.phar'          # PHP
 
 #
 # Shorthands for cd        
-####################################
-alias cdd='cd ~/Desktop/'          # Desktop
-alias cdw='cd ~/Downloads/'        # Downloads
-alias cdt='cd ~/Documents/'        # Documents
-alias cdp='cd ~/Desktop/projects'  # Projects
-alias cdc='cd ~/Desktop/cours'     # Cours
-####################################
+########################################
+alias cdd='cd ~/Desktop/'              # Desktop
+alias cdw='cd ~/Downloads/'            # Downloads
+alias cdt='cd ~/Documents/'            # Documents
+alias cdp='cd ~/Desktop/projects'      # Projects
+alias cd+='cd ~/Desktop/projects/cpp'  # Projects/C++
+alias cdj='cd ~/Desktop/projects/java' # Projects/java
+alias cds='cd ~/Desktop/projects/swift'# Projects/swift
+alias cde='cd ~/Exercism'              # Projects/Exercism (symlinked)
+alias cdc='cd ~/Desktop/cours'         # Cours
+########################################
 
 alias path='echo -e ${PATH//:/\\n}'
 alias show_profile='vim ~/.profile'
@@ -48,3 +54,4 @@ alias cls='clear'
 alias javafxc='javac --module-path $PATH_TO_FX'
 
 alias cowtune='fortune | cowsay'
+
