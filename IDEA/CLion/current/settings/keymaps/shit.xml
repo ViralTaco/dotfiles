@@ -1,0 +1,27 @@
+<keymap version="1" name="shit" parent="Mac OS X">
+  <action id="CIDR.Lang.IntroduceDefine" />
+  <action id="CommentByBlockComment" />
+  <action id="Console.TableResult.SetDefault" />
+  <action id="EditorFocusGutter" />
+  <action id="EditorHungryBackSpace">
+    <keyboard-shortcut first-keystroke="ctrl meta alt back_space" />
+  </action>
+  <action id="EditorIndentLineOrSelection">
+    <keyboard-shortcut first-keystroke="meta alt right_parenthesis" />
+  </action>
+  <action id="EditorJoinLines" />
+  <action id="EditorMoveToPageBottom">
+    <keyboard-shortcut first-keystroke="meta page_down" />
+    <mouse-shortcut keystroke="shift button142" />
+  </action>
+  <action id="EditorMoveToPageBottomWithSelection" />
+  <action id="EditorMoveToPageTop">
+    <mouse-shortcut keystroke="shift button143" />
+  </action>
+  <action id="EditorMoveToPageTopWithSelection" />
+  <action id="EditorPasteFromX11" />
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="f3" />
+  </action>
+  <action id="Replace" />
+</keymap>

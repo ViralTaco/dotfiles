@@ -1,36 +1,39 @@
-###############################################################################
-#                ______                _   _                                  #
-#               |  ____|              | | (_)                                 #
-#               | |__ _   _ _ __   ___| |_ _  ___  _ __  ___                  #
-#               |  __| | | | '_ \ / __| __| |/ _ \| '_ \/ __|                 #
-#               | |  | |_| | | | | (__| |_| | (_) | | | \__ \                 #
-#               |_|   \__,_|_| |_|\___|\__|_|\___/|_| |_|___/                 #
-#                                                                             #
-###############################################################################
+##																																						 .functions.zshrc
+mkyear() {
+	for m in {1..12}; do
+		command mkdir -v "${PWD\/$(date -d ${m}/1/1 +%m.\ %B)}";
+	done
+}
 
+rmyear() {
+	for m in {1..12}; do
+		command rmdir -v "${PWD\/$(date -d ${m}/1/1 +%m.\ %B)}";
+	done
+}
 
 endl() {
-  printf "\n"
+	printf "\n"
 }
 
 export COLUMNS
 ls() {
-  command exa -lh --group-directories-first --time-style=iso "$@"; endl 
+	command ls -lh --color=always "$@"
+	endl
 }
 
 cd() {
-  builtin cd "$@"
-  ls
-  return $?
+	builtin cd "$@"
+	ls
+	return $?
 }
 
 # clang format
 cform() {
-  clang-format -style=Google -i "$@"
+	clang-format -style=Google -i "$@"
 }
 
 dir() {
-  command gdir -w $COLUMNS -ACgs --color --hyperlink
+	command gdir -w $COLUMNS -ACgs --color --hyperlink
 }
 
 #dir() {
@@ -38,37 +41,40 @@ dir() {
 #}
 
 disk_space() {
-  command df -am | less -R -X -F
+	command df -am | less -R -X -F
 }
 
 lz() {
-  pillz "$@" && command clear
+	command date &&\
+	pillz "$@" &&\
+	command date &&\
+	command clear
 }
 
 mnap() {
-  repeating '—' COLUMNS; endl
-  command date
-  repeating '—' COLUMNS; endl
-  
-  command sudo nmap -Pn -p 1-65535 -sV -sS -T4 "$@" 
-  
-  repeating '—' COLUMNS; endl
+	repeating '—' COLUMNS; endl
+	command date
+	repeating '—' COLUMNS; endl
+	
+	command sudo nmap -Pn -p 1-65535 -sV -sS -T4 "$@" 
+	
+	repeating '—' COLUMNS; endl
 }
 
 repeating() {
-  local count=$(( $2 + 0 ))
-  if (( $count < 1 )) || (( $count > 100 )); then 
-    $count=1
-  fi
-  command awk -v count="$count" -v txt="$1" 'BEGIN {
-    while (z++ < count) printf txt
-  }'
-  
-  return 0
+	local count=$(( $2 + 0 ))
+	if (( $count < 1 )) || (( $count > 100 )); then
+		$count=1
+	fi
+	command awk -v count="$count" -v txt="$1" 'BEGIN {
+		while (z++ < count) printf txt
+	}'
+	
+	return 0
 }
 
 # This command is so supidly awkward that, yes, I need a function for it.
 # I know an alias would have worked. I don't care. Fuck you, Oracle.
 mysql_start() {
-  command mysql.server start
+	command mysql.server start
 }

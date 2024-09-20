@@ -1,0 +1,16 @@
+club.nutsoft.Github3Theme
+com.corochann.plugin.clion.singlefileexecutionplugin
+com.github.itechbear.clion.cpplint
+com.github.johnthagen.cppcheck
+com.intellij.javafx
+com.intellij.plugins.macoskeymap
+com.intellij.plugins.sublimetextkeymap
+com.intellij.properties
+com.jetbrains.colorful.toolwindow.icons
+com.zero9178
+io.kanro.idea.plugin.protobuf
+monokai-pro
+org.jetbrains.code-golf
+org.nik.presentation-assistant
+org.sonarlint.idea
+org.toml.lang

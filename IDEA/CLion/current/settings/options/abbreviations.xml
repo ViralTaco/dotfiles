@@ -1,0 +1,9 @@
+<application>
+  <component name="AbbreviationManager">
+    <abbreviations>
+      <action id="EditorSortLines">
+        <abbreviation name="sortln" />
+      </action>
+    </abbreviations>
+  </component>
+</application>

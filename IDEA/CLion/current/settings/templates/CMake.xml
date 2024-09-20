@@ -1,0 +1,6 @@
+<templateSet group="CMake">
+  <template name="if" value="if($CONDITION$)&#10;    $END$&#10;endif()" description="if()-condition" toReformat="true" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>

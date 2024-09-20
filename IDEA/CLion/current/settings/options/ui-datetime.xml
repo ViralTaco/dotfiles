@@ -1,0 +1,5 @@
+<application>
+  <component name="DateTimeFormatter">
+    <option name="prettyFormattingAllowed" value="false" />
+  </component>
+</application>
