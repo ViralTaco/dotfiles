@@ -1,0 +1,44 @@
+<application>
+  <component name="FindSettings">
+    <option name="caseSensitive" value="true" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="localRegularExpressions" value="true" />
+    <option name="regularExpressions" value="true" />
+    <option name="showResultsInSeparateView" value="true" />
+    <option name="CASE_SENSITIVE_SEARCH" value="true" />
+    <option name="REGULAR_EXPRESSIONS" value="true" />
+    <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
+    <option name="SHOW_RESULTS_IN_SEPARATE_VIEW" value="true" />
+    <option name="SEARCH_SCOPE" value="All Places" />
+    <mask>*.css</mask>
+    <mask>*.html</mask>
+    <mask>*.xml</mask>
+    <mask>*.cp</mask>
+    <mask>*.inl</mask>
+    <mask>*.ino</mask>
+    <mask>*.cuh</mask>
+    <mask>*.pch</mask>
+    <mask>*.c++</mask>
+    <mask>*.icc</mask>
+    <mask>*.ipp</mask>
+    <mask>*.h++</mask>
+    <mask>*.c</mask>
+    <mask>*.h</mask>
+    <mask>*.i</mask>
+    <mask>*.m</mask>
+    <mask>*.cxx</mask>
+    <mask>*.hh</mask>
+    <mask>*.hp</mask>
+    <mask>*.hxx</mask>
+    <mask>*.hpp</mask>
+    <mask>*.tcc</mask>
+    <mask>*.mm</mask>
+    <mask>*.tpp</mask>
+    <mask>*.ii</mask>
+    <mask>*.cu</mask>
+    <mask>*.cc</mask>
+    <mask>*.cpp</mask>
+    <mask>*_duo.c</mask>
+  </component>
+</application>

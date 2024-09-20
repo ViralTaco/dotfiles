@@ -1,0 +1,19 @@
+<keymap version="1" name="IntelliJ IDEA Classic copy" parent="Mac OS X">
+  <action id="EditorFocusGutter" />
+  <action id="EditorHungryBackSpace">
+    <keyboard-shortcut first-keystroke="ctrl meta alt back_space" />
+  </action>
+  <action id="EditorIndentLineOrSelection">
+    <keyboard-shortcut first-keystroke="meta alt right_parenthesis" />
+  </action>
+  <action id="EditorJoinLines" />
+  <action id="EditorMoveToPageBottom">
+    <keyboard-shortcut first-keystroke="meta page_down" />
+    <mouse-shortcut keystroke="shift button142" />
+  </action>
+  <action id="EditorMoveToPageBottomWithSelection" />
+  <action id="EditorMoveToPageTop">
+    <mouse-shortcut keystroke="shift button143" />
+  </action>
+  <action id="EditorMoveToPageTopWithSelection" />
+</keymap>

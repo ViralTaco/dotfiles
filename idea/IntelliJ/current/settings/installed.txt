@@ -1,0 +1,3 @@
+com.bruce.intellijplugin.generatesetter
+org.intellij.scala
+training
