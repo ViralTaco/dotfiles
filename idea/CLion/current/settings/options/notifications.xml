@@ -1,0 +1,12 @@
+<application>
+  <component name="NotificationConfiguration" showBalloons="false" systemNotifications="false">
+    <notification groupId="associate.files" shouldLog="false" />
+    <notification groupId="Attach to Process action" shouldLog="false" />
+    <notification groupId="Autodoc Bundle" shouldLog="false" />
+    <notification groupId="Autodoc Bundle Release" displayType="STICKY_BALLOON" shouldLog="false" />
+    <notification groupId="Automatic indent detection" displayType="STICKY_BALLOON" shouldLog="false" />
+    <notification groupId="Automatic Module Unloading" shouldLog="false" />
+    <notification groupId="URL does not respond notification" shouldLog="false" />
+    <notification groupId="Valgrind" displayType="TOOL_WINDOW" shouldLog="false" />
+  </component>
+</application>

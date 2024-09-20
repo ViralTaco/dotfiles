@@ -1,0 +1,10 @@
+<application>
+  <component name="CPPToolchains" version="4">
+    <toolchains detectedVersion="5">
+      <toolchain name="Default" toolSetKind="SYSTEM_UNIX_TOOLSET" debuggerKind="CUSTOM_GDB" customGDBPath="/usr/local/bin/gdb" />
+      <toolchain name="LLVM 12" toolSetKind="SYSTEM_UNIX_TOOLSET" customMakePath="/usr/bin/make" customCXXCompilerPath="/usr/local/Cellar/llvm/12.0.1/bin/clang-12" debuggerKind="BUNDLED_LLDB" />
+      <toolchain name="System" toolSetKind="SYSTEM_UNIX_TOOLSET" customCMakePath="/usr/local/Cellar/cmake/3.21.0/bin/cmake" customCCompilerPath="/usr/local/Cellar/gcc/11.1.0_1/bin/gcc-11" customCXXCompilerPath="/usr/local/Cellar/llvm/12.0.1/bin/clang-12" debuggerKind="BUNDLED_GDB" />
+      <toolchain name="System (1)" toolSetKind="SYSTEM_UNIX_TOOLSET" debuggerKind="BUNDLED_LLDB" />
+    </toolchains>
+  </component>
+</application>

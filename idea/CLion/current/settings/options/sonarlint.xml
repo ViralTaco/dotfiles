@@ -1,0 +1,50 @@
+<application>
+  <component name="SonarLintGlobalSettings">
+    <option name="autoTrigger" value="false" />
+    <rules>
+      <Rule active="false" key="cpp:S3261" />
+      <Rule active="false" key="cpp:S5421" />
+      <Rule active="false" key="cpp:S5028" />
+      <Rule active="false" key="cpp:S1763" />
+      <Rule active="false" key="cpp:S3642" />
+      <Rule active="false" key="cpp:S1144" />
+      <Rule active="false" key="c:CommentedCode" />
+      <Rule active="false" key="cpp:S6197" />
+      <Rule active="false" key="c:S872" />
+      <Rule active="false" key="c:DigraphUsage" />
+      <Rule active="false" key="cpp:CommentedCode" />
+      <Rule active="false" key="cpp:S3539" />
+      <Rule active="false" key="cpp:S3659" />
+      <Rule active="false" key="c:S5276" />
+      <Rule active="false" key="cpp:S1854" />
+      <Rule key="cpp:Union" />
+      <Rule active="false" key="cpp:S6190" />
+      <Rule active="false" key="cpp:S1116" />
+      <Rule key="cpp:S890" />
+      <Rule active="false" key="c:PPIncludeNotAtTop" />
+      <Rule active="false" key="cpp:S5416" />
+      <Rule active="false" key="c:SideEffectInRightHandSideOfLogical" />
+      <Rule active="false" key="cpp:S995" />
+      <Rule active="false" key="cpp:SingleDeclarationPerStatement" />
+      <Rule active="false" key="cpp:S5276" />
+      <Rule active="false" key="cpp:LiteralSuffix" />
+      <Rule active="false" key="cpp:S5019" />
+      <Rule active="false" key="cpp:S1135" />
+      <Rule active="false" key="cpp:S1133" />
+      <Rule active="false" key="cpp:S3574" />
+      <Rule active="false" key="cpp:S6020" />
+      <Rule key="cpp:S1451" />
+      <Rule active="false" key="cpp:S3608" />
+      <Rule key="cpp:S1749" />
+      <Rule key="cpp:S1705" />
+      <Rule active="false" key="cpp:PPIncludeNotAtTop" />
+      <Rule active="false" key="cpp:S5945" />
+      <Rule active="false" key="cpp:S5825" />
+      <Rule active="false" key="c:PPUndefUsage" />
+      <Rule active="false" key="c:S886" />
+      <Rule key="cpp:S127" />
+      <Rule active="false" key="cpp:S886" />
+      <Rule active="false" key="cpp:S106" />
+    </rules>
+  </component>
+</application>

@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="gdb" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="/usr/local/Cellar/gdb/10.2/bin/gdb" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/Projects/Exercism/cpp/hexadecimal" />
+    </exec>
+  </tool>
+</toolSet>

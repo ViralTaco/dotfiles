@@ -1,0 +1,38 @@
+<application>
+  <component name="OSFileAssociationPreferences">
+    <option name="fileTypeNames">
+      <list>
+        <option value="ObjectiveC" />
+        <option value="ObjectiveC-x-c" />
+        <option value="ObjectiveC-x-c++" />
+        <option value="ObjectiveC-x-cc" />
+        <option value="ObjectiveC-x-cp" />
+        <option value="ObjectiveC-x-cu" />
+        <option value="ObjectiveC-x-cuh" />
+        <option value="ObjectiveC-x-cxx" />
+        <option value="ObjectiveC-x-def" />
+        <option value="ObjectiveC-x-details" />
+        <option value="ObjectiveC-x-h" />
+        <option value="ObjectiveC-x-h++" />
+        <option value="ObjectiveC-x-hh" />
+        <option value="ObjectiveC-x-hp" />
+        <option value="ObjectiveC-x-hpp" />
+        <option value="ObjectiveC-x-hxx" />
+        <option value="ObjectiveC-x-i" />
+        <option value="ObjectiveC-x-icc" />
+        <option value="ObjectiveC-x-ii" />
+        <option value="ObjectiveC-x-inl" />
+        <option value="ObjectiveC-x-ino" />
+        <option value="ObjectiveC-x-ipp" />
+        <option value="ObjectiveC-x-ixx" />
+        <option value="ObjectiveC-x-m" />
+        <option value="ObjectiveC-x-mm" />
+        <option value="ObjectiveC-x-pch" />
+        <option value="ObjectiveC-x-tcc" />
+        <option value="ObjectiveC-x-tpp" />
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+    <option name="ideLocationHash" value="39B8B0D716BCDD9EC6CDA8719D5C1E21" />
+  </component>
+</application>

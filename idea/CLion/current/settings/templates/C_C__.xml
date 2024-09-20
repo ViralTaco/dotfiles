@@ -1,0 +1,17 @@
+<templateSet group="C/C++">
+  <template name="struct" value="struct $NAME$ {&#10;&#10;};" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
+    </context>
+  </template>
+  <template name="namespace" value="namespace $NAME$ {&#10;} // namespace $NAME$" shortcut="ENTER" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_DECLARATION_CPP" value="false" />
+      <option name="OC_EXPRESSION_CPP" value="false" />
+      <option name="OC_STATEMENT_CPP" value="false" />
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,25 @@
+-Xss2m
+-Xms256m
+-Xmx8g
+-XX:NewSize=256m
+-XX:NewRatio=8
+-XX:SoftRefLRUPolicyMSPerMB=0
+-XX:ReservedCodeCacheSize=1024m
+–XX:+UseConcMarkSweepGC
+–XX:+CMSIncrementalMode
+-XX:MaxGCPauseMillis=50
+-XX:GCTimeRatio=98
+-XX:CICompilerCount=2
+-XX:-HeapDumpOnOutOfMemoryError
+-XX:-OmitStackTraceInFastThrow
+-Djdk.http.auth.tunneling.disabledSchemes=""
+-Djdk.attach.allowAttachSelf=true
+-Dkotlinx.coroutines.debug=off
+-Djdk.module.illegalAccess.silent=true
+-XX:ErrorFile=$USER_HOME/java_error_in_clion_%p.log
+-XX:HeapDumpPath=$USER_HOME/java_error_in_clion.hprof
+-Dide.no.platform.update=true
+-Dsun.io.useCanonCaches=false
+-Dtoolbox.notification.token=9xt_bw_daHqURDpZWuR9hCXldotCJDr1oiM9phpRvCE=
+-Dtoolbox.notification.portFile=/Users/viraltaco/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/211.7628.27/CLion.app.vmoptions.port
+-Didea.plugins.path=/Users/viraltaco/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/211.7628.27/CLion.app.plugins

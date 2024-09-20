@@ -1,0 +1,13 @@
+<application>
+  <component name="FileTypeManager" version="18">
+    <extensionMap>
+      <mapping pattern="Argumentative" type="Native" />
+      <mapping ext="ixx" type="ObjectiveC" />
+      <mapping ext="def" type="ObjectiveC" />
+      <mapping ext="details" type="ObjectiveC" />
+      <mapping pattern=".buckconfig" type="PLAIN_TEXT" />
+      <mapping ext="out" type="PLAIN_TEXT" />
+      <mapping ext="r" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>

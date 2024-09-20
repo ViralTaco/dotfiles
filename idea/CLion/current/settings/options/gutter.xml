@@ -1,0 +1,14 @@
+<application>
+  <component name="LineMarkerSettings">
+    <option name="providers">
+      <map>
+        <entry key="RenderedDoc" value="true" />
+        <entry key="com.intellij.execution.lineMarker.RunLineMarkerProvider" value="true" />
+        <entry key="com.intellij.httpClient.http.request.codeInsight.HttpRequestDiffLineMarkerProvider" value="false" />
+        <entry key="com.intellij.sql.editor.SqlRecursiveCallLineMakerProvider" value="false" />
+        <entry key="com.intellij.ui.ColorLineMarkerProvider" value="true" />
+        <entry key="com.intellij.ws.http.request.codeInsight.HttpRequestDiffLineMarkerProvider" value="false" />
+      </map>
+    </option>
+  </component>
+</application>
