@@ -17,7 +17,8 @@ endl() {
 
 export COLUMNS
 ls() {
-	command ls -lh --color=always "$@"
+#	command ls -lh --color=always "$@"
+	command eza -Glha --group-directories-first --sort size "$@"
 	endl
 }
 
