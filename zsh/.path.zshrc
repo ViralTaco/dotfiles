@@ -13,19 +13,15 @@ export PATH="/usr/local/opt/boost/lib/:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 # llvm
-#To use the bundled libc++ please add the following LDFLAGS:
-#
 #llvm is keg-only, which means it was not symlinked into /usr/local,
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="${RC_DIR}/.bin:${PATH}"
 export PATH="/usr/local/bin:/usr/local/sbin${PATH+:$PATH}"
-To use the bundled libunwind please use the following LDFLAGS:
-  LDFLAGS="-L/opt/homebrew/opt/llvm/lib/unwind -lunwind"
 
-To use the bundled libc++ please use the following LDFLAGS:
-  LDFLAGS="-L/opt/homebrew/opt/llvm/lib/c++ -L/opt/homebrew/opt/llvm/lib/unwind -lunwind"
-#export LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib/c++ -L/opt/homebrew/opt/llvm/lib/unwind -lunwind"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
+# brew
 export HOMEBREW_PREFIX="/usr/local"
 export HOMEBREW_CELLAR="/usr/local/Cellar"
 export HOMEBREW_REPOSITORY="/usr/local/Homebrew"
